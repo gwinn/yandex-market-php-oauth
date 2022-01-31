@@ -134,6 +134,14 @@ class OAuthClient extends AbstractServiceClient
     }
 
     /**
+     * @return string
+     */
+    public function getRefreshToken()
+    {
+        return $this->refreshToken;
+    }
+
+    /**
      * Return object of Client without auth headers
      * @return Client
      */
